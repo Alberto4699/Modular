@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Menu"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="regresar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Regresar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="regresarActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" pref="629" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[600, 650]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jLabel1" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="93" pref="93" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputAm" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputNombre" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputAp" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputSexo" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputM" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="inputCm" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jTextField11" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputAlergias" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputTipoSangre" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="inputTelefono" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="inputKg" min="-2" pref="56" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="inputG" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="inputEdad" alignment="1" min="-2" pref="180" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="149" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel13" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="botonGuardar" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inputNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inputAp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inputAm" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel5" max="32767" attributes="0"/>
+                      <Component id="inputSexo" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel6" max="32767" attributes="0"/>
+                      <Component id="inputKg" max="32767" attributes="0"/>
+                      <Component id="jLabel14" max="32767" attributes="0"/>
+                      <Component id="inputG" max="32767" attributes="0"/>
+                      <Component id="jLabel15" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel7" max="32767" attributes="0"/>
+                      <Component id="inputM" max="32767" attributes="0"/>
+                      <Component id="jLabel16" max="32767" attributes="0"/>
+                      <Component id="inputCm" max="32767" attributes="0"/>
+                      <Component id="jLabel17" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel8" max="32767" attributes="0"/>
+                      <Component id="inputEdad" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="inputTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel10" max="32767" attributes="0"/>
+                      <Component id="inputTipoSangre" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="inputAlergias" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jTextField11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel13" max="32767" attributes="0"/>
+                      <Component id="botonGuardar" pref="45" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Editar Paciente"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nombre"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Apellido Paterno"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Apellido Materno"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sexo"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Peso"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Estatura"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Edad"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Telefono"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Tipo de sangre"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Alergias"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel12">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Huella digital"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[150, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputNombre">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[180, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputAp">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[180, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputAm">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[180, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputTelefono">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[180, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inputAlergias">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[180, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField11">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[180, 30]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="botonGuardar">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Guardar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel13">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\User\Escritorio\Quinto semestre\ProyectoModular\J-MEDIC\src\main\java\images\save.png"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputSexo">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="Masculino"/>
+                <StringItem index="2" value="Femenino"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputKg">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="222">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="0"/>
+                <StringItem index="2" value="1"/>
+                <StringItem index="3" value="2"/>
+                <StringItem index="4" value="3"/>
+                <StringItem index="5" value="4"/>
+                <StringItem index="6" value="5"/>
+                <StringItem index="7" value="6"/>
+                <StringItem index="8" value="7"/>
+                <StringItem index="9" value="8"/>
+                <StringItem index="10" value="9"/>
+                <StringItem index="11" value="10"/>
+                <StringItem index="12" value="11"/>
+                <StringItem index="13" value="12"/>
+                <StringItem index="14" value="13"/>
+                <StringItem index="15" value="14"/>
+                <StringItem index="16" value="15"/>
+                <StringItem index="17" value="16"/>
+                <StringItem index="18" value="17"/>
+                <StringItem index="19" value="18"/>
+                <StringItem index="20" value="19"/>
+                <StringItem index="21" value="20"/>
+                <StringItem index="22" value="21"/>
+                <StringItem index="23" value="22"/>
+                <StringItem index="24" value="23"/>
+                <StringItem index="25" value="24"/>
+                <StringItem index="26" value="25"/>
+                <StringItem index="27" value="26"/>
+                <StringItem index="28" value="27"/>
+                <StringItem index="29" value="28"/>
+                <StringItem index="30" value="29"/>
+                <StringItem index="31" value="30"/>
+                <StringItem index="32" value="31"/>
+                <StringItem index="33" value="32"/>
+                <StringItem index="34" value="33"/>
+                <StringItem index="35" value="34"/>
+                <StringItem index="36" value="35"/>
+                <StringItem index="37" value="36"/>
+                <StringItem index="38" value="37"/>
+                <StringItem index="39" value="38"/>
+                <StringItem index="40" value="39"/>
+                <StringItem index="41" value="40"/>
+                <StringItem index="42" value="41"/>
+                <StringItem index="43" value="42"/>
+                <StringItem index="44" value="43"/>
+                <StringItem index="45" value="44"/>
+                <StringItem index="46" value="45"/>
+                <StringItem index="47" value="46"/>
+                <StringItem index="48" value="47"/>
+                <StringItem index="49" value="48"/>
+                <StringItem index="50" value="49"/>
+                <StringItem index="51" value="50"/>
+                <StringItem index="52" value="51"/>
+                <StringItem index="53" value="52"/>
+                <StringItem index="54" value="53"/>
+                <StringItem index="55" value="54"/>
+                <StringItem index="56" value="55"/>
+                <StringItem index="57" value="56"/>
+                <StringItem index="58" value="57"/>
+                <StringItem index="59" value="58"/>
+                <StringItem index="60" value="59"/>
+                <StringItem index="61" value="60"/>
+                <StringItem index="62" value="61"/>
+                <StringItem index="63" value="62"/>
+                <StringItem index="64" value="63"/>
+                <StringItem index="65" value="64"/>
+                <StringItem index="66" value="65"/>
+                <StringItem index="67" value="66"/>
+                <StringItem index="68" value="67"/>
+                <StringItem index="69" value="68"/>
+                <StringItem index="70" value="69"/>
+                <StringItem index="71" value="70"/>
+                <StringItem index="72" value="71"/>
+                <StringItem index="73" value="72"/>
+                <StringItem index="74" value="73"/>
+                <StringItem index="75" value="74"/>
+                <StringItem index="76" value="75"/>
+                <StringItem index="77" value="76"/>
+                <StringItem index="78" value="77"/>
+                <StringItem index="79" value="78"/>
+                <StringItem index="80" value="79"/>
+                <StringItem index="81" value="80"/>
+                <StringItem index="82" value="81"/>
+                <StringItem index="83" value="82"/>
+                <StringItem index="84" value="83"/>
+                <StringItem index="85" value="84"/>
+                <StringItem index="86" value="85"/>
+                <StringItem index="87" value="86"/>
+                <StringItem index="88" value="87"/>
+                <StringItem index="89" value="88"/>
+                <StringItem index="90" value="89"/>
+                <StringItem index="91" value="90"/>
+                <StringItem index="92" value="91"/>
+                <StringItem index="93" value="92"/>
+                <StringItem index="94" value="93"/>
+                <StringItem index="95" value="94"/>
+                <StringItem index="96" value="95"/>
+                <StringItem index="97" value="96"/>
+                <StringItem index="98" value="97"/>
+                <StringItem index="99" value="98"/>
+                <StringItem index="100" value="99"/>
+                <StringItem index="101" value="100"/>
+                <StringItem index="102" value="101"/>
+                <StringItem index="103" value="102"/>
+                <StringItem index="104" value="103"/>
+                <StringItem index="105" value="104"/>
+                <StringItem index="106" value="105"/>
+                <StringItem index="107" value="106"/>
+                <StringItem index="108" value="107"/>
+                <StringItem index="109" value="108"/>
+                <StringItem index="110" value="109"/>
+                <StringItem index="111" value="110"/>
+                <StringItem index="112" value="111"/>
+                <StringItem index="113" value="112"/>
+                <StringItem index="114" value="113"/>
+                <StringItem index="115" value="114"/>
+                <StringItem index="116" value="115"/>
+                <StringItem index="117" value="116"/>
+                <StringItem index="118" value="117"/>
+                <StringItem index="119" value="118"/>
+                <StringItem index="120" value="119"/>
+                <StringItem index="121" value="120"/>
+                <StringItem index="122" value="121"/>
+                <StringItem index="123" value="122"/>
+                <StringItem index="124" value="123"/>
+                <StringItem index="125" value="124"/>
+                <StringItem index="126" value="125"/>
+                <StringItem index="127" value="126"/>
+                <StringItem index="128" value="127"/>
+                <StringItem index="129" value="128"/>
+                <StringItem index="130" value="129"/>
+                <StringItem index="131" value="130"/>
+                <StringItem index="132" value="131"/>
+                <StringItem index="133" value="132"/>
+                <StringItem index="134" value="133"/>
+                <StringItem index="135" value="134"/>
+                <StringItem index="136" value="135"/>
+                <StringItem index="137" value="136"/>
+                <StringItem index="138" value="137"/>
+                <StringItem index="139" value="138"/>
+                <StringItem index="140" value="139"/>
+                <StringItem index="141" value="140"/>
+                <StringItem index="142" value="141"/>
+                <StringItem index="143" value="142"/>
+                <StringItem index="144" value="143"/>
+                <StringItem index="145" value="144"/>
+                <StringItem index="146" value="145"/>
+                <StringItem index="147" value="146"/>
+                <StringItem index="148" value="147"/>
+                <StringItem index="149" value="148"/>
+                <StringItem index="150" value="149"/>
+                <StringItem index="151" value="150"/>
+                <StringItem index="152" value="151"/>
+                <StringItem index="153" value="152"/>
+                <StringItem index="154" value="153"/>
+                <StringItem index="155" value="154"/>
+                <StringItem index="156" value="155"/>
+                <StringItem index="157" value="156"/>
+                <StringItem index="158" value="157"/>
+                <StringItem index="159" value="158"/>
+                <StringItem index="160" value="159"/>
+                <StringItem index="161" value="160"/>
+                <StringItem index="162" value="161"/>
+                <StringItem index="163" value="162"/>
+                <StringItem index="164" value="163"/>
+                <StringItem index="165" value="164"/>
+                <StringItem index="166" value="165"/>
+                <StringItem index="167" value="166"/>
+                <StringItem index="168" value="167"/>
+                <StringItem index="169" value="168"/>
+                <StringItem index="170" value="169"/>
+                <StringItem index="171" value="170"/>
+                <StringItem index="172" value="171"/>
+                <StringItem index="173" value="172"/>
+                <StringItem index="174" value="173"/>
+                <StringItem index="175" value="174"/>
+                <StringItem index="176" value="175"/>
+                <StringItem index="177" value="176"/>
+                <StringItem index="178" value="177"/>
+                <StringItem index="179" value="178"/>
+                <StringItem index="180" value="179"/>
+                <StringItem index="181" value="180"/>
+                <StringItem index="182" value="181"/>
+                <StringItem index="183" value="182"/>
+                <StringItem index="184" value="183"/>
+                <StringItem index="185" value="184"/>
+                <StringItem index="186" value="185"/>
+                <StringItem index="187" value="186"/>
+                <StringItem index="188" value="187"/>
+                <StringItem index="189" value="188"/>
+                <StringItem index="190" value="189"/>
+                <StringItem index="191" value="190"/>
+                <StringItem index="192" value="191"/>
+                <StringItem index="193" value="192"/>
+                <StringItem index="194" value="193"/>
+                <StringItem index="195" value="194"/>
+                <StringItem index="196" value="195"/>
+                <StringItem index="197" value="196"/>
+                <StringItem index="198" value="197"/>
+                <StringItem index="199" value="198"/>
+                <StringItem index="200" value="199"/>
+                <StringItem index="201" value="200"/>
+                <StringItem index="202" value="201"/>
+                <StringItem index="203" value="202"/>
+                <StringItem index="204" value="203"/>
+                <StringItem index="205" value="204"/>
+                <StringItem index="206" value="205"/>
+                <StringItem index="207" value="206"/>
+                <StringItem index="208" value="207"/>
+                <StringItem index="209" value="208"/>
+                <StringItem index="210" value="209"/>
+                <StringItem index="211" value="210"/>
+                <StringItem index="212" value="211"/>
+                <StringItem index="213" value="212"/>
+                <StringItem index="214" value="213"/>
+                <StringItem index="215" value="214"/>
+                <StringItem index="216" value="215"/>
+                <StringItem index="217" value="216"/>
+                <StringItem index="218" value="217"/>
+                <StringItem index="219" value="218"/>
+                <StringItem index="220" value="219"/>
+                <StringItem index="221" value="220"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel14">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="KG."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputG">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="11">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value=".00"/>
+                <StringItem index="2" value=".100"/>
+                <StringItem index="3" value=".200"/>
+                <StringItem index="4" value=".300"/>
+                <StringItem index="5" value=".400"/>
+                <StringItem index="6" value=".500"/>
+                <StringItem index="7" value=".600"/>
+                <StringItem index="8" value=".700"/>
+                <StringItem index="9" value=".800"/>
+                <StringItem index="10" value=".900"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel15">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="G."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputM">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="0."/>
+                <StringItem index="2" value="1."/>
+                <StringItem index="3" value="2."/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel16">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="M."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputCm">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="101">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="0"/>
+                <StringItem index="2" value="1"/>
+                <StringItem index="3" value="2"/>
+                <StringItem index="4" value="3"/>
+                <StringItem index="5" value="4"/>
+                <StringItem index="6" value="5"/>
+                <StringItem index="7" value="6"/>
+                <StringItem index="8" value="7"/>
+                <StringItem index="9" value="8"/>
+                <StringItem index="10" value="9"/>
+                <StringItem index="11" value="10"/>
+                <StringItem index="12" value="11"/>
+                <StringItem index="13" value="12"/>
+                <StringItem index="14" value="13"/>
+                <StringItem index="15" value="14"/>
+                <StringItem index="16" value="15"/>
+                <StringItem index="17" value="16"/>
+                <StringItem index="18" value="17"/>
+                <StringItem index="19" value="18"/>
+                <StringItem index="20" value="19"/>
+                <StringItem index="21" value="20"/>
+                <StringItem index="22" value="21"/>
+                <StringItem index="23" value="22"/>
+                <StringItem index="24" value="23"/>
+                <StringItem index="25" value="24"/>
+                <StringItem index="26" value="25"/>
+                <StringItem index="27" value="26"/>
+                <StringItem index="28" value="27"/>
+                <StringItem index="29" value="28"/>
+                <StringItem index="30" value="29"/>
+                <StringItem index="31" value="30"/>
+                <StringItem index="32" value="31"/>
+                <StringItem index="33" value="32"/>
+                <StringItem index="34" value="33"/>
+                <StringItem index="35" value="34"/>
+                <StringItem index="36" value="35"/>
+                <StringItem index="37" value="36"/>
+                <StringItem index="38" value="37"/>
+                <StringItem index="39" value="38"/>
+                <StringItem index="40" value="39"/>
+                <StringItem index="41" value="40"/>
+                <StringItem index="42" value="41"/>
+                <StringItem index="43" value="42"/>
+                <StringItem index="44" value="43"/>
+                <StringItem index="45" value="44"/>
+                <StringItem index="46" value="45"/>
+                <StringItem index="47" value="46"/>
+                <StringItem index="48" value="47"/>
+                <StringItem index="49" value="48"/>
+                <StringItem index="50" value="49"/>
+                <StringItem index="51" value="50"/>
+                <StringItem index="52" value="51"/>
+                <StringItem index="53" value="52"/>
+                <StringItem index="54" value="53"/>
+                <StringItem index="55" value="54"/>
+                <StringItem index="56" value="55"/>
+                <StringItem index="57" value="56"/>
+                <StringItem index="58" value="57"/>
+                <StringItem index="59" value="58"/>
+                <StringItem index="60" value="59"/>
+                <StringItem index="61" value="60"/>
+                <StringItem index="62" value="61"/>
+                <StringItem index="63" value="62"/>
+                <StringItem index="64" value="63"/>
+                <StringItem index="65" value="64"/>
+                <StringItem index="66" value="65"/>
+                <StringItem index="67" value="66"/>
+                <StringItem index="68" value="67"/>
+                <StringItem index="69" value="68"/>
+                <StringItem index="70" value="69"/>
+                <StringItem index="71" value="70"/>
+                <StringItem index="72" value="71"/>
+                <StringItem index="73" value="72"/>
+                <StringItem index="74" value="73"/>
+                <StringItem index="75" value="74"/>
+                <StringItem index="76" value="75"/>
+                <StringItem index="77" value="76"/>
+                <StringItem index="78" value="77"/>
+                <StringItem index="79" value="78"/>
+                <StringItem index="80" value="79"/>
+                <StringItem index="81" value="80"/>
+                <StringItem index="82" value="81"/>
+                <StringItem index="83" value="82"/>
+                <StringItem index="84" value="83"/>
+                <StringItem index="85" value="84"/>
+                <StringItem index="86" value="85"/>
+                <StringItem index="87" value="86"/>
+                <StringItem index="88" value="87"/>
+                <StringItem index="89" value="88"/>
+                <StringItem index="90" value="89"/>
+                <StringItem index="91" value="90"/>
+                <StringItem index="92" value="91"/>
+                <StringItem index="93" value="92"/>
+                <StringItem index="94" value="93"/>
+                <StringItem index="95" value="94"/>
+                <StringItem index="96" value="95"/>
+                <StringItem index="97" value="96"/>
+                <StringItem index="98" value="97"/>
+                <StringItem index="99" value="98"/>
+                <StringItem index="100" value="99"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel17">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="CM."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputEdad">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="222">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="0"/>
+                <StringItem index="2" value="1"/>
+                <StringItem index="3" value="2"/>
+                <StringItem index="4" value="3"/>
+                <StringItem index="5" value="4"/>
+                <StringItem index="6" value="5"/>
+                <StringItem index="7" value="6"/>
+                <StringItem index="8" value="7"/>
+                <StringItem index="9" value="8"/>
+                <StringItem index="10" value="9"/>
+                <StringItem index="11" value="10"/>
+                <StringItem index="12" value="11"/>
+                <StringItem index="13" value="12"/>
+                <StringItem index="14" value="13"/>
+                <StringItem index="15" value="14"/>
+                <StringItem index="16" value="15"/>
+                <StringItem index="17" value="16"/>
+                <StringItem index="18" value="17"/>
+                <StringItem index="19" value="18"/>
+                <StringItem index="20" value="19"/>
+                <StringItem index="21" value="20"/>
+                <StringItem index="22" value="21"/>
+                <StringItem index="23" value="22"/>
+                <StringItem index="24" value="23"/>
+                <StringItem index="25" value="24"/>
+                <StringItem index="26" value="25"/>
+                <StringItem index="27" value="26"/>
+                <StringItem index="28" value="27"/>
+                <StringItem index="29" value="28"/>
+                <StringItem index="30" value="29"/>
+                <StringItem index="31" value="30"/>
+                <StringItem index="32" value="31"/>
+                <StringItem index="33" value="32"/>
+                <StringItem index="34" value="33"/>
+                <StringItem index="35" value="34"/>
+                <StringItem index="36" value="35"/>
+                <StringItem index="37" value="36"/>
+                <StringItem index="38" value="37"/>
+                <StringItem index="39" value="38"/>
+                <StringItem index="40" value="39"/>
+                <StringItem index="41" value="40"/>
+                <StringItem index="42" value="41"/>
+                <StringItem index="43" value="42"/>
+                <StringItem index="44" value="43"/>
+                <StringItem index="45" value="44"/>
+                <StringItem index="46" value="45"/>
+                <StringItem index="47" value="46"/>
+                <StringItem index="48" value="47"/>
+                <StringItem index="49" value="48"/>
+                <StringItem index="50" value="49"/>
+                <StringItem index="51" value="50"/>
+                <StringItem index="52" value="51"/>
+                <StringItem index="53" value="52"/>
+                <StringItem index="54" value="53"/>
+                <StringItem index="55" value="54"/>
+                <StringItem index="56" value="55"/>
+                <StringItem index="57" value="56"/>
+                <StringItem index="58" value="57"/>
+                <StringItem index="59" value="58"/>
+                <StringItem index="60" value="59"/>
+                <StringItem index="61" value="60"/>
+                <StringItem index="62" value="61"/>
+                <StringItem index="63" value="62"/>
+                <StringItem index="64" value="63"/>
+                <StringItem index="65" value="64"/>
+                <StringItem index="66" value="65"/>
+                <StringItem index="67" value="66"/>
+                <StringItem index="68" value="67"/>
+                <StringItem index="69" value="68"/>
+                <StringItem index="70" value="69"/>
+                <StringItem index="71" value="70"/>
+                <StringItem index="72" value="71"/>
+                <StringItem index="73" value="72"/>
+                <StringItem index="74" value="73"/>
+                <StringItem index="75" value="74"/>
+                <StringItem index="76" value="75"/>
+                <StringItem index="77" value="76"/>
+                <StringItem index="78" value="77"/>
+                <StringItem index="79" value="78"/>
+                <StringItem index="80" value="79"/>
+                <StringItem index="81" value="80"/>
+                <StringItem index="82" value="81"/>
+                <StringItem index="83" value="82"/>
+                <StringItem index="84" value="83"/>
+                <StringItem index="85" value="84"/>
+                <StringItem index="86" value="85"/>
+                <StringItem index="87" value="86"/>
+                <StringItem index="88" value="87"/>
+                <StringItem index="89" value="88"/>
+                <StringItem index="90" value="89"/>
+                <StringItem index="91" value="90"/>
+                <StringItem index="92" value="91"/>
+                <StringItem index="93" value="92"/>
+                <StringItem index="94" value="93"/>
+                <StringItem index="95" value="94"/>
+                <StringItem index="96" value="95"/>
+                <StringItem index="97" value="96"/>
+                <StringItem index="98" value="97"/>
+                <StringItem index="99" value="98"/>
+                <StringItem index="100" value="99"/>
+                <StringItem index="101" value="100"/>
+                <StringItem index="102" value="101"/>
+                <StringItem index="103" value="102"/>
+                <StringItem index="104" value="103"/>
+                <StringItem index="105" value="104"/>
+                <StringItem index="106" value="105"/>
+                <StringItem index="107" value="106"/>
+                <StringItem index="108" value="107"/>
+                <StringItem index="109" value="108"/>
+                <StringItem index="110" value="109"/>
+                <StringItem index="111" value="110"/>
+                <StringItem index="112" value="111"/>
+                <StringItem index="113" value="112"/>
+                <StringItem index="114" value="113"/>
+                <StringItem index="115" value="114"/>
+                <StringItem index="116" value="115"/>
+                <StringItem index="117" value="116"/>
+                <StringItem index="118" value="117"/>
+                <StringItem index="119" value="118"/>
+                <StringItem index="120" value="119"/>
+                <StringItem index="121" value="120"/>
+                <StringItem index="122" value="121"/>
+                <StringItem index="123" value="122"/>
+                <StringItem index="124" value="123"/>
+                <StringItem index="125" value="124"/>
+                <StringItem index="126" value="125"/>
+                <StringItem index="127" value="126"/>
+                <StringItem index="128" value="127"/>
+                <StringItem index="129" value="128"/>
+                <StringItem index="130" value="129"/>
+                <StringItem index="131" value="130"/>
+                <StringItem index="132" value="131"/>
+                <StringItem index="133" value="132"/>
+                <StringItem index="134" value="133"/>
+                <StringItem index="135" value="134"/>
+                <StringItem index="136" value="135"/>
+                <StringItem index="137" value="136"/>
+                <StringItem index="138" value="137"/>
+                <StringItem index="139" value="138"/>
+                <StringItem index="140" value="139"/>
+                <StringItem index="141" value="140"/>
+                <StringItem index="142" value="141"/>
+                <StringItem index="143" value="142"/>
+                <StringItem index="144" value="143"/>
+                <StringItem index="145" value="144"/>
+                <StringItem index="146" value="145"/>
+                <StringItem index="147" value="146"/>
+                <StringItem index="148" value="147"/>
+                <StringItem index="149" value="148"/>
+                <StringItem index="150" value="149"/>
+                <StringItem index="151" value="150"/>
+                <StringItem index="152" value="151"/>
+                <StringItem index="153" value="152"/>
+                <StringItem index="154" value="153"/>
+                <StringItem index="155" value="154"/>
+                <StringItem index="156" value="155"/>
+                <StringItem index="157" value="156"/>
+                <StringItem index="158" value="157"/>
+                <StringItem index="159" value="158"/>
+                <StringItem index="160" value="159"/>
+                <StringItem index="161" value="160"/>
+                <StringItem index="162" value="161"/>
+                <StringItem index="163" value="162"/>
+                <StringItem index="164" value="163"/>
+                <StringItem index="165" value="164"/>
+                <StringItem index="166" value="165"/>
+                <StringItem index="167" value="166"/>
+                <StringItem index="168" value="167"/>
+                <StringItem index="169" value="168"/>
+                <StringItem index="170" value="169"/>
+                <StringItem index="171" value="170"/>
+                <StringItem index="172" value="171"/>
+                <StringItem index="173" value="172"/>
+                <StringItem index="174" value="173"/>
+                <StringItem index="175" value="174"/>
+                <StringItem index="176" value="175"/>
+                <StringItem index="177" value="176"/>
+                <StringItem index="178" value="177"/>
+                <StringItem index="179" value="178"/>
+                <StringItem index="180" value="179"/>
+                <StringItem index="181" value="180"/>
+                <StringItem index="182" value="181"/>
+                <StringItem index="183" value="182"/>
+                <StringItem index="184" value="183"/>
+                <StringItem index="185" value="184"/>
+                <StringItem index="186" value="185"/>
+                <StringItem index="187" value="186"/>
+                <StringItem index="188" value="187"/>
+                <StringItem index="189" value="188"/>
+                <StringItem index="190" value="189"/>
+                <StringItem index="191" value="190"/>
+                <StringItem index="192" value="191"/>
+                <StringItem index="193" value="192"/>
+                <StringItem index="194" value="193"/>
+                <StringItem index="195" value="194"/>
+                <StringItem index="196" value="195"/>
+                <StringItem index="197" value="196"/>
+                <StringItem index="198" value="197"/>
+                <StringItem index="199" value="198"/>
+                <StringItem index="200" value="199"/>
+                <StringItem index="201" value="200"/>
+                <StringItem index="202" value="201"/>
+                <StringItem index="203" value="202"/>
+                <StringItem index="204" value="203"/>
+                <StringItem index="205" value="204"/>
+                <StringItem index="206" value="205"/>
+                <StringItem index="207" value="206"/>
+                <StringItem index="208" value="207"/>
+                <StringItem index="209" value="208"/>
+                <StringItem index="210" value="209"/>
+                <StringItem index="211" value="210"/>
+                <StringItem index="212" value="211"/>
+                <StringItem index="213" value="212"/>
+                <StringItem index="214" value="213"/>
+                <StringItem index="215" value="214"/>
+                <StringItem index="216" value="215"/>
+                <StringItem index="217" value="216"/>
+                <StringItem index="218" value="217"/>
+                <StringItem index="219" value="218"/>
+                <StringItem index="220" value="219"/>
+                <StringItem index="221" value="220"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="inputTipoSangre">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="9">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="A+"/>
+                <StringItem index="2" value="A-"/>
+                <StringItem index="3" value="B+"/>
+                <StringItem index="4" value="B-"/>
+                <StringItem index="5" value="AB+"/>
+                <StringItem index="6" value="AB-"/>
+                <StringItem index="7" value="O+"/>
+                <StringItem index="8" value="O-"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
