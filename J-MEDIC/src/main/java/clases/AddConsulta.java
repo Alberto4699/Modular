@@ -5,6 +5,11 @@
  */
 package clases;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.regex.Pattern;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author toote
@@ -18,7 +23,93 @@ public class AddConsulta extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-
+String fe;
+    public boolean  validar_id_paciente(){
+       String idpaciente =inputIdPaciente.getText();
+       boolean validar_idpaci=Pattern.compile("^[0-9]{1,}$").matcher(idpaciente).matches();
+       return validar_idpaci;
+        
+}
+    public boolean  validar_id_medico(){
+       String idmedico =inputIdMedico.getText();
+       boolean validar_idmedic=Pattern.compile("^[0-9]{1,}$").matcher(idmedico).matches();
+       return validar_idmedic;
+        
+}
+    public boolean  validar_fecha(){
+     
+       if(FechaAuto.getText().isEmpty()){
+           return false;
+       }else{
+           
+           return true;
+       }
+}
+    public boolean  validar_id_consulta(){
+       String idconsulta =inputIdConsulta.getText();
+       boolean validar_idconsul=Pattern.compile("^[0-9]{1,}$").matcher(idconsulta).matches();
+       return validar_idconsul;
+        
+}
+    public boolean  validar_pruebas(){
+       String pruebas =inputPruebasRealizadas.getText();
+       boolean validar_prueb=Pattern.compile("^[a-z|A-Z ,]+").matcher(pruebas).matches();
+       return validar_prueb;
+        
+}
+    public boolean  validar_diagnostico(){
+       String diagnostico =inputDiagnostico.getText();
+       boolean validar_diag=Pattern.compile("^[a-z|A-Z 0-9 ,.]+").matcher(diagnostico).matches();
+       return validar_diag;
+        
+}
+    public boolean  validar_tratamiento(){
+       String tratamiento =inputTratamiento.getText();
+       boolean validar_tratamien=Pattern.compile("^[a-z|A-Z 0-9 ,.]+").matcher(tratamiento).matches();
+       return validar_tratamien;
+        
+}
+  public boolean validar_motivo(){
+          //String sangre=inputEdad.getSelectedItem().toString();
+           String tipo_motivo = null;
+           String motivo = inputMotivoConsulta.getSelectedItem().toString();
+           if(motivo==" "){
+               return false;
+           }else{
+           if("Consulta general".equals(motivo)){
+               tipo_motivo = "1";
+            }
+            
+            if("Examenes".equals(motivo)){
+                tipo_motivo = "2";
+           }
+           
+           if("Curaciones".equals(motivo)){
+                tipo_motivo = "3";
+           }
+           
+           //System.out.print(tipo_motivo);
+           return true;
+           }
+  }
+    public void validar_datos(){
+        if(validar_id_medico()==true&&validar_id_paciente()==true&&validar_motivo()==true&&validar_fecha()==true){
+                //System.out.print(fe);
+              JOptionPane.showMessageDialog(null, " VALIDO");
+         }else{
+              JOptionPane.showMessageDialog(null, " NO VALIDO");
+          }
+      }
+    public void validar_datos_2(){
+        if( validar_id_consulta()==true&&validar_pruebas()==true&&validar_diagnostico()==true&&validar_tratamiento()==true){
+              JOptionPane.showMessageDialog(null, "VALIDO");
+         }else{
+              JOptionPane.showMessageDialog(null, "NO VALIDO");
+          }
+       
+      }
+    
+       
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -38,12 +129,6 @@ public class AddConsulta extends javax.swing.JFrame {
         inputIdPaciente = new javax.swing.JTextField();
         inputMotivoConsulta = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        inputA = new javax.swing.JComboBox<>();
-        jLabel6 = new javax.swing.JLabel();
-        inputM = new javax.swing.JComboBox<>();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        inputD = new javax.swing.JComboBox<>();
         generarIdConsulta = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaConsultas = new javax.swing.JTable();
@@ -59,12 +144,13 @@ public class AddConsulta extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         inputTratamiento = new javax.swing.JTextArea();
         guardarConsulta = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        FechaAuto = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         regresar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(830, 500));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -102,28 +188,15 @@ public class AddConsulta extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("Fecha de visita");
 
-        inputA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        inputA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "2021", "2022", "2023", "2024", "2025" }));
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setText("Año");
-
-        inputM.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        inputM.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "-Enero-", "-Febrero-", "-Marzo-", "-Abril-", "-Mayo-", "-Junio-", "-Julio-", "-Agosto-", "-Septiembre-", "-Octubre-", "-Noviembre-", "-Diciembre-" }));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setText("Mes");
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel8.setText("Día");
-
-        inputD.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        inputD.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-
         generarIdConsulta.setBackground(new java.awt.Color(255, 255, 255));
         generarIdConsulta.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         generarIdConsulta.setText("Generar ID de consulta");
         generarIdConsulta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        generarIdConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                generarIdConsultaActionPerformed(evt);
+            }
+        });
 
         tablaConsultas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -192,6 +265,15 @@ public class AddConsulta extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Generar Fecha");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        FechaAuto.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -211,21 +293,13 @@ public class AddConsulta extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                                    .addComponent(inputIdPaciente))
-                                .addGap(18, 18, 18))
+                                    .addComponent(inputIdPaciente)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(inputA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(inputM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(inputD, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel8)
-                                .addGap(200, 200, 200)))
+                                .addComponent(FechaAuto, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(generarIdConsulta, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -242,7 +316,7 @@ public class AddConsulta extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 36, Short.MAX_VALUE))
+                        .addGap(0, 39, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -269,14 +343,10 @@ public class AddConsulta extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(generarIdConsulta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(inputD)
-                    .addComponent(inputA)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(inputM, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(generarIdConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1)
+                    .addComponent(FechaAuto, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
@@ -341,6 +411,7 @@ public class AddConsulta extends javax.swing.JFrame {
 
     private void guardarConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarConsultaActionPerformed
         // TODO add your handling code here:
+        validar_datos_2();
     }//GEN-LAST:event_guardarConsultaActionPerformed
 
     private void regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresarActionPerformed
@@ -348,6 +419,21 @@ public class AddConsulta extends javax.swing.JFrame {
         a.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_regresarActionPerformed
+
+    private void generarIdConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generarIdConsultaActionPerformed
+        // TODO add your handling code here:
+        validar_datos();
+    }//GEN-LAST:event_generarIdConsultaActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Calendar fechas = new GregorianCalendar();
+        String anio = Integer.toString(fechas.get(Calendar.YEAR));
+        String mes = Integer.toString(fechas.get(Calendar.MONTH));
+        String dia = Integer.toString(fechas.get(Calendar.DATE));
+         String fe = anio+"-"+mes+"-"+dia;
+        FechaAuto.setText(fe);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -386,18 +472,17 @@ public class AddConsulta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel FechaAuto;
     private javax.swing.JButton generarIdConsulta;
     private javax.swing.JButton guardarConsulta;
-    private javax.swing.JComboBox<String> inputA;
-    private javax.swing.JComboBox<String> inputD;
     private javax.swing.JTextArea inputDiagnostico;
     private javax.swing.JTextField inputIdConsulta;
     private javax.swing.JTextField inputIdMedico;
     private javax.swing.JTextField inputIdPaciente;
-    private javax.swing.JComboBox<String> inputM;
     private javax.swing.JComboBox<String> inputMotivoConsulta;
     private javax.swing.JTextArea inputPruebasRealizadas;
     private javax.swing.JTextArea inputTratamiento;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -406,9 +491,6 @@ public class AddConsulta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
@@ -421,4 +503,10 @@ public class AddConsulta extends javax.swing.JFrame {
     private javax.swing.JMenuItem regresar;
     private javax.swing.JTable tablaConsultas;
     // End of variables declaration//GEN-END:variables
+
+    private static class fe {
+
+        public fe() {
+        }
+    }
 }

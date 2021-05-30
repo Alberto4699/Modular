@@ -5,6 +5,9 @@
  */
 package clases;
 
+import java.util.regex.Pattern;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author toote
@@ -19,6 +22,58 @@ public class AddDoctor extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
+    public boolean  validar_nombre(){
+       String nombre =inputNombre.getText();
+       boolean validar_nom=Pattern.compile("^[a-z|A-Z .'-]+$").matcher(nombre).matches();
+        return validar_nom;
+        
+} 
+      public boolean validar_apellidoP(){
+       String apellidop =inputAp.getText();
+       boolean validar_aP=Pattern.compile("^[a-z|A-Z .'-]+$").matcher(apellidop).matches();
+        return validar_aP;
+}
+     public boolean validar_apellidoM(){
+       String apellidom =inputAm.getText();
+       boolean validar_aM=Pattern.compile("^[a-z|A-Z .'-]+$").matcher(apellidom).matches();
+       return validar_aM;
+}
+    public boolean validar_cedula(){
+       String apellidom =inputCedula.getText();
+       boolean validar_aM=Pattern.compile("^[0-9]{1,8}$").matcher(apellidom).matches();
+       return validar_aM;
+}
+    public boolean validar_telefono(){
+       String telefono =inputTelefono.getText();
+       boolean validar_tel=Pattern.compile("^[0-9]{10}$").matcher(telefono).matches();
+       //System.out.print(validar_tel+"");
+       return validar_tel;
+}
+public boolean validar_turno(){
+          //String sangre=inputEdad.getSelectedItem().toString();
+           String tipo_turno = null;
+           String turno = inputTurno.getSelectedItem().toString();
+           if(turno==" "){
+               return false;
+           }else{
+           if("Matutino".equals(turno)){
+               tipo_turno = "1";
+            }
+            if("Vespertino".equals(turno)){
+                tipo_turno = "2";
+           }
+           //System.out.print(tipo_turno);
+           return true;
+           }
+  }
+    public void validar_datos(){
+          if(validar_nombre()==true&&validar_apellidoP()==true&&validar_apellidoM()==true&&validar_cedula()==true&&validar_telefono()==true&&validar_turno()==true){
+              JOptionPane.showMessageDialog(null, "VALIDO");
+          }else{
+              JOptionPane.showMessageDialog(null, "NO VALIDO");
+          }
+       
+      }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,7 +104,6 @@ public class AddDoctor extends javax.swing.JFrame {
         regresar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(600, 621));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -101,8 +155,11 @@ public class AddDoctor extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton1.setText("Guardar");
         jButton1.setPreferredSize(new java.awt.Dimension(135, 45));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("D:\\User\\Escritorio\\Quinto semestre\\ProyectoModular\\J-MEDIC\\src\\main\\java\\images\\save.png")); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         inputTurno.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         inputTurno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Matutino", "Vespertino" }));
@@ -220,6 +277,11 @@ public class AddDoctor extends javax.swing.JFrame {
         a.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_regresarActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        validar_datos();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

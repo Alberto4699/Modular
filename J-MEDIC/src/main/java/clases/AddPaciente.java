@@ -5,6 +5,10 @@
  */
 package clases;
 
+import java.awt.event.ActionEvent;
+import java.util.regex.Pattern;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author toote
@@ -17,8 +21,160 @@ public class AddPaciente extends javax.swing.JFrame {
     public AddPaciente() {
         initComponents();
         this.setLocationRelativeTo(null);
+        
     }
-
+    
+    public boolean  validar_nombre(){
+       String nombre =inputNombre.getText();
+       boolean validar_nom=Pattern.compile("^[a-z|A-Z .'-]+$").matcher(nombre).matches();
+        return validar_nom;
+        
+} 
+      public boolean validar_apellidoP(){
+       String apellidop =inputAp.getText();
+       boolean validar_aP=Pattern.compile("^[a-z|A-Z .'-]+$").matcher(apellidop).matches();
+        return validar_aP;
+}
+     public boolean validar_apellidoM(){
+       String apellidom =inputAm.getText();
+       boolean validar_aM=Pattern.compile("^[a-z|A-Z .'-]+$").matcher(apellidom).matches();
+       return validar_aM;
+}
+    public boolean validar_telefono(){
+       String telefono =inputTelefono.getText();
+       boolean validar_tel=Pattern.compile("^[0-9]{10}$").matcher(telefono).matches();
+       //System.out.print(validar_tel+"");
+       return validar_tel;
+}
+    public boolean validar_alergias(){
+        String alergias =inputAlergias.getText();
+        boolean validar_alergias=Pattern.compile("^[a-z|A-Z .,'-]+$").matcher(alergias).matches();
+        return validar_alergias;
+}
+    public boolean validar_sexo(){
+     int cont=0;
+     String sexo=inputSexo.getSelectedItem().toString();
+     if (sexo== " "){
+        cont+=1;
+     }  
+     if(cont>0)
+     {
+         return false;
+     }else{
+        
+         //System.out.print(sexo);
+         return true;
+     }
+}
+    public boolean validar_peso(){
+     int cont=0;
+     String kilo=inputKg.getSelectedItem().toString();
+     String gramo=inputG.getSelectedItem().toString();
+     String peso = kilo.concat(gramo);
+     if (kilo==" "){
+        cont+=1;
+     }
+     if (gramo==" "){
+        cont+=1;
+     }  
+     if(cont>0)
+     {
+         return false;
+     }else{
+        
+         //System.out.print(peso);
+         return true;
+     }  
+   }
+    public boolean validar_estatura(){
+     int cont=0;
+      String metros=inputM.getSelectedItem().toString();
+      String cm=inputCm.getSelectedItem().toString();
+      String estatura = metros.concat(cm);
+     if (metros==" "){
+        cont+=1;
+     }
+     if (cm==" "){
+        cont+=1;
+     }  
+     if(cont>0)
+     {
+         return false;
+     }else{
+        
+         //System.out.print(estatura);
+         return true;
+     }  
+   }
+    public boolean validar_sangre(){
+          //String sangre=inputEdad.getSelectedItem().toString();
+           String tipo_sangre = null;
+           String sangre = inputTipoSangre.getSelectedItem().toString();
+           if(sangre==" "){
+               return false;
+           }else{
+           if("A+".equals(sangre)){
+               tipo_sangre = "1";
+            }
+            
+            if("A-".equals(sangre)){
+                tipo_sangre = "2";
+           }
+           
+           if("B+".equals(sangre)){
+                tipo_sangre = "3";
+           }
+           
+           if("B+".equals(sangre)){
+               tipo_sangre = "4";
+            }
+            
+           if("O+".equals(sangre)){
+                tipo_sangre = "5";
+           }
+           
+          if("O-".equals(sangre)){
+                tipo_sangre = "6";
+           }
+          
+          if("AB+".equals(sangre)){
+                tipo_sangre = "7";
+           }
+           
+          if("AB-".equals(sangre)){
+                tipo_sangre = "8";
+           }
+           //System.out.print(tipo_sangre);
+           return true;
+           }
+  }
+    public boolean validar_edad(){
+     int cont=0;
+     String edad=inputEdad.getSelectedItem().toString();
+     if (edad== " "){
+        cont+=1;
+     }  
+     if(cont>0)
+     {
+         return false;
+     }else{
+        
+         //System.out.print(edad);
+         return true;
+     }
+}
+     public void validar_datos()
+      {
+          if(validar_nombre()==true&&validar_apellidoP()==true&&validar_apellidoM()==true&&validar_sexo()==true&&validar_peso()==true&&validar_edad()==true&&validar_estatura()==true&&validar_telefono()==true&&validar_sangre()==true&&validar_alergias()==true){
+              JOptionPane.showMessageDialog(null, "VALIDO");
+          }else{
+              JOptionPane.showMessageDialog(null, " NO VALIDO");
+          }
+       
+      }
+     public void actionPerformed(ActionEvent e){
+         
+     }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -144,8 +300,11 @@ public class AddPaciente extends javax.swing.JFrame {
 
         botonGuardar.setBackground(new java.awt.Color(255, 255, 255));
         botonGuardar.setText("Guardar");
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("D:\\User\\Escritorio\\Quinto semestre\\ProyectoModular\\J-MEDIC\\src\\main\\java\\images\\save.png")); // NOI18N
+        botonGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonGuardarActionPerformed(evt);
+            }
+        });
 
         inputSexo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         inputSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Masculino", "Femenino" }));
@@ -244,7 +403,7 @@ public class AddPaciente extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel15))
                             .addComponent(inputEdad, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 149, Short.MAX_VALUE))
+                        .addGap(0, 147, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -278,7 +437,7 @@ public class AddPaciente extends javax.swing.JFrame {
                     .addComponent(inputKg)
                     .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(inputG)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -306,7 +465,7 @@ public class AddPaciente extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botonGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE))
@@ -346,6 +505,10 @@ public class AddPaciente extends javax.swing.JFrame {
         a.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_regresarActionPerformed
+
+    private void botonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGuardarActionPerformed
+        validar_datos();
+    }//GEN-LAST:event_botonGuardarActionPerformed
 
     /**
      * @param args the command line arguments

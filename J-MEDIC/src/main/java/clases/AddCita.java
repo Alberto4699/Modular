@@ -5,6 +5,9 @@
  */
 package clases;
 
+import java.util.regex.Pattern;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author toote
@@ -18,7 +21,54 @@ public class AddCita extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
+    public boolean  validar_id_paciente(){
+       String idpaciente =inputIdPaciente.getText();
+       boolean validar_idpaci=Pattern.compile("^[0-9]{1,}$").matcher(idpaciente).matches();
+       return validar_idpaci;
+        
+}
+ public boolean  validar_fecha(){
+     int cont=0;
+     String anio = inputA.getSelectedItem().toString();
+     String mes = inputM.getSelectedItem().toString();
+     String dia = inputD.getSelectedItem().toString();
+     String hora = inputH.getSelectedItem().toString();
+     String minutos = inputMin.getSelectedItem().toString();
+     if (anio == " "){
+        cont+=1;
+     }  
+     if (mes == " "){
+        cont+=1;
+     } 
+     if (dia == " "){
+        cont+=1;
+     } 
+     if (hora == " "){
+        cont+=1;
+     } 
+     if (minutos == " "){
+        cont+=1;
+     }   
 
+     if(cont>0)
+     {
+         
+         return false;
+     }else{
+         String fecha=anio.concat(mes).concat(dia).concat(hora).concat(minutos);
+         //System.out.print(fecha);
+         return true;
+     }
+
+}
+    public void validar_datos(){
+        if(validar_id_paciente()==true&&validar_fecha()==true){
+              JOptionPane.showMessageDialog(null, "VALIDO");
+         }else{
+              JOptionPane.showMessageDialog(null, "NO VALIDO");
+          }
+      }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -264,6 +314,7 @@ public class AddCita extends javax.swing.JFrame {
 
     private void agendarCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agendarCitaActionPerformed
         // TODO add your handling code here:
+        validar_datos();
     }//GEN-LAST:event_agendarCitaActionPerformed
 
     private void inputIdPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputIdPacienteActionPerformed
